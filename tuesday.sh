@@ -9,6 +9,7 @@ git push
 
 # DOCKER_REDMINE
 cd /mnt/xyliss/git/docker-redmine/
+git checkout 2.6-stable
 sed -i "s/^ENV\s*DOCKER_REDMINE_UPDATED\(.*\)$/ENV\ DOCKER_REDMINE_UPDATED\ $DATE/" Dockerfile
 git commit -am "Automatically Refreshed on $DATE"
 git push

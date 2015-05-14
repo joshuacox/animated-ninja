@@ -7,3 +7,10 @@ sed -i "s/^ENV\s*DOCKER_CHEF_SOLO_UPDATED\(.*\)$/ENV\ DOCKER_CHEF_SOLO_UPDATED\ 
 git commit -am "Automatically Refreshed on $DATE"
 git push
 # grep -P '^ENV\s*DOCKER_CHEF_SOLO_UPDATED\s*\d*$' Dockerfile
+
+# DOCKER_OPENFIRE master
+cd /mnt/xyliss/git/docker-openfire/
+git checkout master
+sed -i "s/^ENV\s*DOCKER_OPENFIRE_UPDATED\(.*\)$/ENV\ DOCKER_OPENFIRE_UPDATED\ $DATE/" Dockerfile
+git commit -am "Automatically Refreshed on $DATE"
+git push

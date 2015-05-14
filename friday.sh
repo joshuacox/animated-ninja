@@ -15,3 +15,10 @@ git checkout master
 sed -i "s/^ENV\s*DOCKER_PUPPET_UPDATED\(.*\)$/ENV\ DOCKER_PUPPET_UPDATED\ $DATE/" Dockerfile
 git commit -am "Automatically Refreshed on $DATE"
 git push
+
+# OCTOSSH
+cd /mnt/xyliss/git/octossh/
+git checkout master
+sed -i "s/^ENV\s*OCTOSSH_UPDATED\(.*\)$/ENV\ OCTOSSH_UPDATED\ $DATE/" Dockerfile
+git commit -am "Automatically Refreshed on $DATE"
+git push
