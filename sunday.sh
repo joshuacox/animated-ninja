@@ -15,3 +15,10 @@ git checkout master
 sed -i "s/^ENV\s*ARCHLINUX_YAOURT_UPDATED\(.*\)$/ENV\ ARCHLINUX_YAOURT_UPDATED\ $DATE/" Dockerfile
 git commit -am "Automatically Refreshed on $DATE"
 git push
+
+# STEAMER
+cd /mnt/xyliss/git/steamer/
+git checkout master
+sed -i "s/^ENV\s*STEAMER_UPDATED\(.*\)$/ENV\ STEAMER_UPDATED\ $DATE/" Dockerfile
+git commit -am "Automatically Refreshed on $DATE"
+git push

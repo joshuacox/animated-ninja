@@ -19,3 +19,9 @@ cd /mnt/xyliss/git/docker-ubuntu/
 sed -i "s/^ENV\s*DOCKER_UBUNTU_UPDATED\(.*\)$/ENV\ DOCKER_UBUNTU_UPDATED\ $DATE/" Dockerfile
 git commit -am "Automatically Refreshed on $DATE"
 git push
+
+# DockArmaIII 
+cd /mnt/xyliss/git/dockarmaiii/
+sed -i "s/^ENV\s*DOCKARMAIII_UPDATED\(.*\)$/ENV\ DOCKARMAIII_UPDATED\ $DATE/" Dockerfile
+git commit -am "Automatically Refreshed on $DATE"
+git push
