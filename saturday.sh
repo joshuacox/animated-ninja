@@ -16,3 +16,11 @@ sed -i "s/^ENV\s*ICINGASH_UPDATED\(.*\)$/ENV\ ICINGASH_UPDATED\ $DATE/" Dockerfi
 git commit -am "Automatically Refreshed on $DATE"
 git push
 # grep -P '^ENV\s*DOCKER_CHEF_SOLO_UPDATED\s*\d*$' Dockerfile
+
+# DOCKER_ICINGA2
+cd /mnt/xyliss/git/docker-icinga2/
+git checkout master
+sed -i "s/^ENV\s*DOCKER_ICINGA2_UPDATED\(.*\)$/ENV\ DOCKER_ICINGA2_UPDATED\ $DATE/" Dockerfile
+git commit -am "Automatically Refreshed on $DATE"
+git push
+# grep -P '^ENV\s*DOCKER_CHEF_SOLO_UPDATED\s*\d*$' Dockerfile
